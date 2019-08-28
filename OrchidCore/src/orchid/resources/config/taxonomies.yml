@@ -1,7 +1,9 @@
 taxonomies:
   - key: group
+    title: 'Plugins and Themes'
     single: true
     setAsPageParent: true
+    permalink: 'plugins-and-themes/:archiveIndex'
     plugins:
       orderByDirection: asc
       permalink: ':term/:archiveIndex'
@@ -17,11 +19,18 @@ taxonomies:
       permalink: ':term/:archiveIndex'
       orderBy:
         - 'title'
+  - key: category
+    title: 'Categories'
+    single: true
+    setAsPageParent: true
+    permalink: 'categories/:archiveIndex'
+    includeFrom:
+      - 'posts'
+    orderBy:
+      - 'publishDate'
+    news:
+      permalink: ':term/:archiveIndex'
 
 # Page configurations
-taxonomyArchivePages:
-  extraCss:
-    - 'assets/css/plugins.scss'
 termArchivePages:
-  extraCss:
-    - 'assets/css/plugins.scss'
+  layout: noBoxNoTitle

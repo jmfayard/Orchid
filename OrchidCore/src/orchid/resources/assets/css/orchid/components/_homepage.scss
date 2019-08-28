@@ -1,0 +1,29 @@
+.component {
+  .title:not(.is-4) {
+    font-size: 80px;
+
+    &.superhero {
+      font-size: 180px;
+    }
+    &.sidekick {
+      font-size: 64px;
+    }
+  }
+  .subtitle {
+    font-size: 48px;
+  }
+  .list-title {
+    font-size: 38px;
+  }
+
+  &.has-background-dark {
+    * {
+      color: white;
+    }
+  }
+
+  .content figure {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

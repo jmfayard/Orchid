@@ -1,0 +1,57 @@
+<style>
+  .features {
+    background-repeat: no-repeat;
+    background-image: url({{ 'assets/media/undraw_maker_launch_crhe.svg'|asset }});
+    background-size: contain;
+  }
+
+  .features > .subtitle {
+    margin-bottom: 300px;
+  }
+
+  .features a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<div class="features">
+  <h2 class="title has-text-centered">{{ component.sectionTitle }}</h2>
+  <h3 class="subtitle has-text-centered">{{ component.sectionSubtitle }}</h3>
+
+  <div class="columns is-desktop">
+    <div class="column is-half has-background-light" style="border-radius: 20px;">
+      <h3 class="list-title">Document any language</h3>
+      <ul>
+        <li>{{ anchor('Java', 'Orchid Javadoc') }}</li>
+        <li>{{ anchor('Kotlin', 'Orchid Kotlindoc') }}</li>
+        <li>{{ anchor('Groovy', 'Orchid Groovydoc') }}</li>
+        <li>{{ anchor('Swift', 'Orchid Swiftdoc') }}</li>
+        <li>{{ anchor('CSS', 'Orchid KSS') }}</li>
+      </ul>
+
+      <h3 class="list-title">Do more with tons of plugins</h3>
+      <ul>
+        <li>{{ anchor('Blog posts', 'Orchid Posts') }}</li>
+        <li>{{ anchor('Wikis', 'Orchid Wiki') }}</li>
+        <li>{{ anchor('Changelogs', 'Orchid Changelog') }}</li>
+        <li>{{ anchor('Code Documentation', 'Orchid Javadoc') }}</li>
+        <li>{{ anchor('Client-side search', 'Orchid Search') }}</li>
+      </ul>
+
+      <h3 class="list-title">Connect to your existing tools</h3>
+      <ul>
+        <li>{{ anchor('GitHub Wikis', 'Orchid Github') }}</li>
+        <li>{{ anchor('Swagger API Definitions', 'Orchid Swagger') }}</li>
+        <li>{{ anchor('Netlify Forms', 'Orchid Forms') }}</li>
+      </ul>
+
+      <h3 class="list-title">Pain-free integrated deployment</h3>
+      <ul>
+        <li>{{ anchor('GitHub Pages', 'Orchid Github') }}</li>
+        <li>{{ anchor('Gitlab Pages', 'Orchid Gitlab') }}</li>
+        <li>{{ anchor('Netlify', 'Orchid Netlify') }}</li>
+      </ul>
+    </div>
+    <div class="column"></div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="homepage">
+<head>
+{% include '?trackingHeadStart' %}
+{% head %}
+{% styles %}
+{% include '?trackingHeadEnd' %}
+</head>
+<body>
+{% include '?trackingBodyStart' %}
+{% embed 'includes/componentHolder' with {"componentHolder": page.components} %}
+{% block componentWrapper %}
+<section
+  class="
+section
+has-background-{{ component.backgroundColor|default("light") }}
+is-{{ component.sectionSize }}
+component
+component-{{ component.type }}
+component-order-{{ component.order }}"
+>
+  <div class="container content is-medium">
+  {{ component.renderContent(page.context, page) | raw }}
+  </div>
+</section>
+{% endblock %}
+{% endembed %}
+<section class="section">
+  <div class="container">
+    <div class="page-footer">
+    {% block footer %}
+      <footer class="footer is-paddingless">
+        <div class="content is-small">
+        {% include 'includes/footer.peb' %}
+        </div>
+      </footer>
+    {% endblock %}
+    </div>
+  </div>
+</section>
+{% scripts %}
+{% include '?trackingBodyEnd' %}
+</body>
+</html>

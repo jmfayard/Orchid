@@ -9,4 +9,6 @@ images:
     title: Search
   - src: https://res.cloudinary.com/orchid/image/upload/c_fit,h_320,w_480/v1524969542/themes/futureimperfect/4.jpg
     title: Sidebar
+tags:
+  - 'blogs'
 ---

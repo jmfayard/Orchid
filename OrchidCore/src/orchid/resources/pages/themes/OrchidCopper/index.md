@@ -9,4 +9,7 @@ images:
     title: No-Box Layout
   - src: https://res.cloudinary.com/orchid/image/upload/c_fit,h_320,w_480/v1549253492/themes/copper/4.jpg
     title: Forms
+tags:
+  - 'docs'
+  - 'blogs'
 ---

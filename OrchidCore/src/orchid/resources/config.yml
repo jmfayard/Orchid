@@ -1,15 +1,13 @@
 site:
   about:
     siteName: Orchid
-    siteDescription: A beautiful and truly unique documentation engine and static site generator.
+    siteDescription: Build and deploy beautiful, organic, modular static sites
     avatar: 'assets/media/avatar.jpg'
 
 theme:
-  useSidebarSearch: true
-  github: 'JavaEden/Orchid'
   social:
     other:
-      - link: 'https://orchid.netlify.com/'
+      - link: '/'
         label: 'Home'
         icon: 'fas fa-home'
       - link: 'https://github.com/JavaEden/Orchid'
@@ -30,27 +28,28 @@ theme:
       itemId: 'Quick-Start'
       title: 'Get Started'
     - type: 'wikiSections'
-    - type: 'submenu'
-      title: 'Explore'
-      menu:
-        - type: 'taxonomy'
-          taxonomyType: 'group'
-          includeTerms: true
-          termsAtRoot: true
-        - type: 'page'
-          title: 'API Docs'
-          itemId: 'com.eden.orchid'
-        - type: 'page'
-          title: 'Changelog'
-          itemId: 'Changelog'
-    - type: 'latestPosts'
-      limit: 3
-      title: 'News'
-    - type: 'github'
-      githubProject: 'JavaEden/Orchid'
-      title: 'Github'
+    - type: 'taxonomy'
+      taxonomyType: 'group'
+      includeTerms: false
+      title: 'Plugins and Themes'
+  sidebarBackground: 'black'
+  sidebarBackgroundType: GRADIENT
+  sidebarShadow: false
+  useBackgroundTexture: false
+  colors:
+    purple: '#7E83C4'
+    black: '#444444'
+  palette:
+    primary: 'PURPLE'
+    link: 'PURPLE'
   extraCss:
+    - "inline:sidecar.css: .gitter-chat-embed { margin-top: 50px; }"
+    - 'assets/css/plugins.scss'
     - 'assets/css/extras.scss'
+  extraJs:
+    - "inline:sidecar.js:((window.gitter = { }).chat = { }).options = { room: 'JavaEden/Orchid' }; "
+    - "https://sidecar.gitter.im/dist/sidecar.v1.js"
+    - "assets/js/simpleFilter.js"
 
 services:
   publications:
@@ -60,11 +59,6 @@ services:
         commitish: 'master'
 
 allPages:
-  extraCss:
-    - "inline:sidecar.css: .gitter-chat-embed { margin-top: 50px; }"
-  extraJs:
-    - "inline:sidecar.js:((window.gitter = { }).chat = { }).options = { room: 'JavaEden/Orchid' }; "
-    - "https://sidecar.gitter.im/dist/sidecar.v1.js"
   components:
     - type: "pageContent"
     - type: "prism"

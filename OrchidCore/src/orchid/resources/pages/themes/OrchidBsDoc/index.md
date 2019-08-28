@@ -11,4 +11,6 @@ images:
     title: Documentation
   - src: https://res.cloudinary.com/orchid/image/upload/c_fit,h_320,w_480/v1524971822/themes/bsdoc/5.jpg
     title: Javadocs
+tags:
+  - 'docs'
 ---

@@ -1,2 +1,10 @@
 categories:
   - 'news'
+
+postPages:
+  layout: 'noBox'
+  author: 'Casey Brooks'
+
+authors:
+  - name: 'Casey Brooks'
+    email: 'cjbrooks12@gmail.com'

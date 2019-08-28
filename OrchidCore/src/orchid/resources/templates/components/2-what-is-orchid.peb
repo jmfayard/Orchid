@@ -1,0 +1,23 @@
+<style>
+
+</style>
+
+<div class="what-is-orchid">
+  <h1 class="title has-text-centered">{{ component.sectionTitle }}</h1>
+
+  <div class="content is-large has-text-centered">
+    <p>
+    Orchid is a framework for generating project documentation websites, with all the bells-and-thistles you need to go
+    with it. Orchid lets you publish your all wikis, changelogs, blogs, code comments, and more with one centralized workflow.
+    </p>
+    <p>
+      We'll even deploy it for you to, so you can stop fussing over tooling, and focus on your project.
+    </p>
+  </div>
+
+
+  <div class="has-text-centered">
+  {{ anchor(title = "Browse Plugins and Themes", collectionType='taxonomies', collectionId='taxonomies', itemId='group', customClasses = "button is-primary is-large is-rounded") }}
+  {{ anchor(title = "View Showcase", itemId = "Plugins", customClasses = "button is-primary is-large is-rounded") }}
+  </div>
+</div>

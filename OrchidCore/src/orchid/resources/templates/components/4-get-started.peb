@@ -1,0 +1,41 @@
+<style>
+  .get-started {
+    text-align: center;
+    position: relative;
+  }
+
+  .get-started * {
+    color: white;
+  }
+
+  .get-started .title {
+    font-size: 80px;
+    color: white !important;
+  }
+
+  .get-started .subtitle {
+    color: white !important;
+  }
+
+  .get-started .getting-started-card {
+    display: block;
+    padding-bottom: 30px;
+  }
+</style>
+
+<div class="get-started">
+  <h2 class="title">{{ component.sectionTitle }}</h2>
+  <h3 class="subtitle">{{ component.sectionSubtitle }}</h3>
+
+  <div style="width: 360px; margin: 120px auto 0;">
+    <a href="{{ link('Your First Orchid Site') }}" class="getting-started-card">
+    {% include 'blocks/previewCard.peb' with {'title': 'Learn the Basics', 'mediaFile': 'undraw_in_progress_ql66.svg', 'ctaName': 'View Tutorial', 'hoverable': true} %}
+    </a>
+    <a href="{{ link('How to Document a Kotlin Project') }}" class="getting-started-card">
+    {% include 'blocks/previewCard.peb' with {'title': 'Set Up Project Documentation', 'mediaFile': 'undraw_code_review_l1q9.svg', 'ctaName': 'View Tutorial', 'hoverable': true} %}
+    </a>
+    <a href="{{ link('How to Document a Kotlin Project') }}" class="getting-started-card">
+    {% include 'blocks/previewCard.peb' with {'title': 'Make a Personal Portfolio', 'mediaFile': 'undraw_content_vbqo.svg', 'ctaName': 'View Tutorial', 'hoverable': true} %}
+    </a>
+  </div>
+</div>

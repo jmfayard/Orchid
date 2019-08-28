@@ -7,4 +7,6 @@ images:
     title: Post Layout
   - src: https://res.cloudinary.com/orchid/image/upload/c_fit,h_320,w_480/v1524970938/themes/editorial/3.jpg
     title: Search
+tags:
+  - 'docs'
 ---

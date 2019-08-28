@@ -1,26 +1,36 @@
 ---
-layout: frontPage
+layout: orchidHomepage
 relativePriority: 1.0
 components:
-  - template: 'homepage-description'
-  - template: 'homepage-grid'
-  - template: 'homepage-setup'
-  - template: 'homepage-staggered-list'
-  - template: 'homepage-open-source'
-  - template: 'homepage-call-to-action'
-extraCss:
-  - 'assets/css/homepage.scss'
-keywordPages:
-  - ['Kotlin Docs', 'Orchid Kotlindoc']
-  - ['Blog', 'Orchid Posts']
-  - ['Javadocs', 'Orchid Javadoc']
-  - ['Landing Pages', 'Orchid Pages']
-  - ['Search', 'Orchid Search']
-  - ['Wiki', 'Orchid Wiki']
-  - ['Documentation', 'Orchid Wiki']
-  - ['Portfolio', 'Orchid Blog']
-  - ['CMS', 'Orchid Netlify CMS']
-  - ['Forms', 'Orchid Forms']
-  - ['Styleguide', 'Orchid KSS']
-  - ['API Docs', 'Orchid Swagger']
+  - template: '1-hero'
+    backgroundColor: light
+    sectionSize: 'medium'
+    sectionTitle: ''
+  - template: '2-what-is-orchid'
+    backgroundColor: dark
+    sectionSize: 'medium'
+    sectionTitle: 'What Is Orchid?'
+  - template: '3-latest-news'
+    backgroundColor: light
+    sectionSize: 'small'
+    sectionTitle: 'Latest News'
+  - template: '4-get-started'
+    backgroundColor: dark
+    sectionSize: 'medium'
+    sectionTitle: 'Ready to Get Started?'
+    sectionSubtitle: "Let's make something beautiful"
+  - template: '5-features'
+    backgroundColor: light
+    sectionSize: 'medium'
+    sectionTitle: 'Features'
+    sectionSubtitle: 'Everything you need to author, build, and deploy documentation sites, top-soil included'
+  - template: '6-connect'
+    backgroundColor: primary
+    sectionSize: 'medium'
+    sectionTitle: 'Get Connected'
+
+menu:
+  - type: 'latestPosts'
+    limit: 1
+    postsAtRoot: true
 ---

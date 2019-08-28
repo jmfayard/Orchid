@@ -1,0 +1,20 @@
+<style>
+.hero .subtitle {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+<div class="hero">
+  <h1 class="title superhero has-text-centered">{{ site.about.siteName }}</h1>
+  <h2 class="subtitle has-text-centered">{{ site.about.siteDescription }}</h2>
+
+  <p class="has-text-centered">
+  {{ anchor(title = "Quick Start", itemId = "Quick-Start", customClasses = "button is-primary is-large is-rounded") }}
+  {{ anchor(title = "Documentation", itemId = "Getting Started", customClasses = "button is-primary is-large is-rounded is-outlined") }}
+  </p>
+  <p class="has-text-centered content is-large">
+  {{ anchor(title="Version "~site.version, itemId='Changelog') }}
+  </p>
+</div>
